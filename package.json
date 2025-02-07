@@ -2,25 +2,36 @@
   "name": "second-assignment",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "import-data": "node script/importData.mjs"
   },
   "dependencies": {
-    "react": "19.0.0-rc-69d4b800-20241021",
-    "react-dom": "19.0.0-rc-69d4b800-20241021",
-    "next": "15.0.1"
+    "@sanity/client": "^6.27.1",
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.71.2",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "next": "15.0.1",
+    "next-sanity": "^9.8.42",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "sanity": "^3.71.2",
+    "stripe": "^17.6.0",
+    "styled-components": "^6.1.14"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.1"
+    "typescript": "^5"
   }
 }
